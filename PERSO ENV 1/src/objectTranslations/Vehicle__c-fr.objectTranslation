@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Vehicle</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Vehicles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Discount_Amount --></label>
+        <name>Discount_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount_Pct --></label>
+        <name>Discount_Pct__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Maintenance Date --></label>
+        <name>First_Maintenance_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Registration Date --></label>
+        <name>First_Registration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Immatriculation --></label>
+        <name>Immatriculation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer --></label>
+        <name>Manufacturer__c</name>
+        <relationshipLabel><!-- Vehicles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>Model__c</name>
+        <picklistValues>
+            <masterLabel>ABX MODEL 01</masterLabel>
+            <translation><!-- ABX MODEL 01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ABX MODEL 02</masterLabel>
+            <translation><!-- ABX MODEL 02 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ABX MODEL 03</masterLabel>
+            <translation><!-- ABX MODEL 03 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ABX MODEL 04</masterLabel>
+            <translation><!-- ABX MODEL 04 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ABX MODEL 05</masterLabel>
+            <translation><!-- ABX MODEL 05 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Owner --></label>
+        <name>Owner__c</name>
+        <relationshipLabel><!-- Vehicles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Price HT --></label>
+        <name>Price_HT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price TTC --></label>
+        <name>Price_TTC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Entretien</masterLabel>
+            <translation><!-- Entretien --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panne</masterLabel>
+            <translation><!-- Panne --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VIN --></label>
+        <name>VIN__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Vehicle Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

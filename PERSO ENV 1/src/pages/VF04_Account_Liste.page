@@ -1,0 +1,14 @@
+<apex:page standardController="Account" recordSetvar="Account">
+	<apex:pageBlock >
+		<apex:form >
+			<apex:outputLabel value="Liste des Accounts"/>
+			<apex:selectList value="{!filterId}" size="1">
+				<apex:actionSupport event="onchange" rerender="list"/>
+				<apex:selectOptions value="{!listviewoptions}"/>
+			</apex:selectList>
+			<apex:dataList var="lop" value="{!Account}" id="list">
+				<u>{!lop.Name} :</u> {!lop.Email_de_son_entreprise__c}
+			</apex:dataList> 
+		</apex:form>
+	</apex:pageBlock>
+</apex:page>

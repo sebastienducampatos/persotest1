@@ -1,0 +1,25 @@
+<apex:page standardController="Opportunity">
+<apex:pageBlock title="Opportunité">
+<ul>
+	<li>     <u>Nom de l'opportunité :</u> {!Opportunity.Name}"</li>
+	<li>           <u>Nom du compte :</u> {!Opportunity.Account.Name}</li>
+	<li><u>Chiffre d'affaire estimé :</u> {!Opportunity.Amount} €</li>
+	<li><u>Chiffre d'affaire estimé au bon format :</u>
+		<apex:outputText style="color: blue;" value="{0, number, ####,####,###,##0}">
+			<apex:param value="{!Opportunity.Amount}"/>
+		</apex:outputText>
+	 	 €</li>
+	<li><u>Date de cloture : </u> 
+		<apex:outputText style="color: blue;" value="{0, date, dd'/'MM'/'yyyy}">
+			<apex:param value="{!Opportunity.CloseDate}"/>
+		</apex:outputText>
+		</li>
+</ul>
+</apex:pageBlock>
+
+<!--  Tout le détail sans préciser chaque champ + Edit -->
+<apex:pageBlock title="Tout le détail sans préciser chaque champ">
+	<apex:detail subject="{!Opportunity.Id}" relatedList="false" title="false"/>
+</apex:pageBlock>
+
+</apex:page>

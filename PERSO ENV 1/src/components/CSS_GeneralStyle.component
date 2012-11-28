@@ -1,0 +1,21 @@
+<apex:component >
+<style type="text/css">
+
+body {
+	font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+	font-size: 10
+}
+
+.listeVehicule {
+}
+
+.listeVehiculeHeaderClass {
+	text-align : center;
+	color: blue;
+	background-color: #C3D9FF;
+}
+.titleVehicule {
+	color: green;
+}
+</style>
+</apex:component>

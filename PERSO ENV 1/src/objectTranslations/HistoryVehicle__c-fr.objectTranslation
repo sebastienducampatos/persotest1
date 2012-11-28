@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HistoryVehicle</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HistoryVehicles</value>
+    </caseValues>
+    <fields>
+        <label><!-- ModificationDate --></label>
+        <name>ModificationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- NewLicencePlate --></label>
+        <name>NewLicencePlate__c</name>
+    </fields>
+    <fields>
+        <label><!-- NewOwner --></label>
+        <name>NewOwner__c</name>
+        <relationshipLabel><!-- HistoryVehicles (NewOwner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NewStatus --></label>
+        <name>NewStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- OldLicencePlate --></label>
+        <name>OldLicencePlate__c</name>
+    </fields>
+    <fields>
+        <label><!-- OldOwner --></label>
+        <name>OldOwner__c</name>
+        <relationshipLabel><!-- HistoryVehicles (OldOwner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- OldStatus --></label>
+        <name>OldStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle --></label>
+        <name>Vehicle__c</name>
+        <relationshipLabel><!-- HistoryVehicles --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>HistoryVehicle Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

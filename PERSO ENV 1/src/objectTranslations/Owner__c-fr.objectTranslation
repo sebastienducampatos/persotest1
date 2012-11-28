@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Owner</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Owners</value>
+    </caseValues>
+    <fields>
+        <label><!-- FirstName --></label>
+        <name>FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- OwnerStatus --></label>
+        <name>OwnerStatus__c</name>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EmployeInterneRenault</masterLabel>
+            <translation><!-- EmployeInterneRenault --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mandataire</masterLabel>
+            <translation><!-- Mandataire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prestataire</masterLabel>
+            <translation><!-- Prestataire --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profession --></label>
+        <name>Profession__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Town --></label>
+        <name>Town__c</name>
+    </fields>
+    <fields>
+        <label><!-- ZIPCode --></label>
+        <name>ZIPCode__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

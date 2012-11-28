@@ -1,0 +1,68 @@
+<apex:page standardcontroller="Vehicle__c" 
+			recordSetvar="Vehicle__c" 
+			showHeader="false" 
+			extensions="AP12_CTRL_VehicleList"
+			standardstylesheets="false"
+			> 	
+	
+	<!--  APPEL AU CSS -->
+	<c:CSS_GeneralStyle />
+	
+	<script>
+	function updateJSVehicle(Id) {
+		updateVehicle(Id);
+	}
+	function deleteJSVehicle(Id) {
+		deleteVehicle(Id);
+	}
+</script>
+	
+	
+	<!--  LISTE DES VEHICULES A MODIFIER -->
+	<apex:outputPanel id="listOfAllCars">
+	<apex:form >
+		<apex:actionFunction name="updateVehicle" action="{!updateVehicle}" reRender="">
+			<apex:param name="vehicleId" value="vehicleId" assignTo="{!VehicleStr}" />
+		</apex:actionFunction>
+		<apex:actionFunction name="deleteVehicle" action="{!deleteVehicle}" reRender="">
+			<apex:param name="vehicleId" value="vehicleId" assignTo="{!VehicleStr}" />
+		</apex:actionFunction>
+		<apex:pageBlock title="Liste des véhicules"> 
+		<apex:pageBlockTable value="{!Vehicle__c}" var="voiture" id="listCar" 
+			border="1" headerClass="listeVehiculeHeaderClass" styleClass="listeVehicule" cellpadding="3">
+			<apex:column value="{!voiture.Name}" styleClass="titleVehicule"/>
+			<apex:column value="{!voiture.Owner__c}"/>
+			<apex:column value="{!voiture.First_Registration_Date__c}"/>
+			<apex:column value="{!voiture.Immatriculation__c}"/>
+			<apex:column value="{!voiture.VIN__c}"/>
+			<apex:column value="{!voiture.Status__c}"/>
+			<apex:column >
+				<img src="{!URLFOR($Resource.Icon_update)}" onclick="updateJSVehicle('{!voiture.id}');" width="30"/>
+				<!-- >
+				<apex:commandLink action="{!updateVehicle}" value="Mise à jour" stype="display: none;">
+					<apex:param name="VehicleId" value="{!voiture.id}" assignTo="{!VehicleId}" />
+				</apex:commandLink>
+				-->
+			</apex:column>
+			<apex:column >
+				 <img src="{!URLFOR($Resource.Icon_delete)}" onclick="deleteJSVehicle('{!voiture.id}');" width="30"/>
+			</apex:column>
+		</apex:pageBlockTable>
+		</apex:pageBlock>
+	</apex:form>
+	</apex:outputPanel>
+	
+	<hr/>
+	<apex:form >
+		<apex:pageBlock title="Enregistrer un nouveau véhicule" >
+			<apex:pageBlockSection columns="1">
+			<apex:inputField value="{!NewVehicule.Name}"/>
+			<apex:inputField value="{!NewVehicule.Immatriculation__c}"/>
+			<apex:inputField value="{!NewVehicule.VIN__c}"/>
+			<apex:inputField value="{!NewVehicule.Owner__c}"/>
+			</apex:pageBlockSection>
+			<apex:commandButton value="Save" action="{!save}"/> 
+		</apex:pageBlock>
+	</apex:form>
+
+</apex:page>
