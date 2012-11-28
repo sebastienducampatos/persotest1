@@ -22,6 +22,7 @@ public with sharing class AP01_Account {
     }
     
     //avec map
+    //yo toto
     public static void updateNames2(List<Opportunity> iOppNew, List<Opportunity> iOppOld) {
 		Map<String, Integer> lNamesIdxMap = new Map<String, Integer>();
 		//on ne garde que les éléments pour lesquels le nom a changé
