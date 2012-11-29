@@ -2,6 +2,7 @@ public with sharing class AP01_Account {
 	
 	//mettre à jour le nom de l'opportunite
 	//avec for de for
+	//okay !
     public static void updateNames(List<Opportunity> iOppNew, List<Opportunity> iOppOld) {
 		Set<String> lNames = new Set<String>();
 		for (Integer i = 0; i < iOppOld.size(); ++i){
